@@ -2,13 +2,22 @@
 import AboutUs from "./pages/AboutUs";
 // global style
 import GlobalStyle from "./components/GlobalStyle";
+import ContactUs from "./pages/ContactUs";
+import OurWork from "./pages/OurWork";
+import Nav from "./components/Nav";
+// router
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <h1>Film</h1>
       <GlobalStyle />
-      <AboutUs />
+      <Nav />
+      <Routes>
+        <Route path="/" exact element={<AboutUs />} />
+        <Route path="/work" exact element={<OurWork />} />
+        <Route path="/contact" exact element={<ContactUs />} />
+      </Routes>
     </div>
   );
 }
