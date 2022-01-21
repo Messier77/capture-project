@@ -1,8 +1,18 @@
+// animations
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+
 const ContactUs = () => {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+      style={{ background: "#FFFFFF" }}
+    >
       <h1>Contact Us</h1>
-    </div>
+    </motion.div>
   );
 };
 
