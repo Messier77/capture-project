@@ -1,7 +1,6 @@
 // animations
 import { motion } from "framer-motion";
 import { pageAnimation, titleAnim } from "../animation";
-import styledComponents from "styled-components";
 import styled from "styled-components";
 
 const ContactUs = () => {
